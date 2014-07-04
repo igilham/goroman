@@ -12,6 +12,9 @@ var numerals = []string {
 	"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I",
 }
 
+// Returns the Roman numeral representation of the given integer.
+// Returns the empty string for numbers out of the range of 0 to 3999.
+// Returns 'N' if the number is '0'.
 func NToRoman(number int) string {
 	if number < 0 || number > 3999 {
 		return ""
